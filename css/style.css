@@ -1,0 +1,229 @@
+/* 
+Muda a fonte do site para Roboto, sans-serif.
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* 
+Esssa parte estiliza o scrollbar do site
+*/
+
+body::-webkit-scrollbar {
+    width: 3px;
+}
+ 
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+*, ::after, ::before {
+    box-sizing: 50px!important; 
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #D94E67;
+    outline: 1px solid slategrey;
+}
+
+/* 
+Esssa parte estiliza a navbar do site, quando o mouse passa 
+por cima aparece uma borda amarela no botão.
+*/
+
+.fixed-top{
+    background-color: #0D0D0D !important;
+}
+
+.navbar-toggler {
+    color: #F2F1E4 !important;
+}
+
+.nav-link{
+    color:#F2F1E4 !important;
+}
+
+.nav-item a:hover{
+    border-bottom: 1px solid #EECB46;
+}
+
+.navbar-brand i {
+    font-size: 1.2em;
+}
+
+.navbar-brand span {
+    font-size: 1.2em;
+}
+
+/* 
+Adiciona uma margin top espeficia para o primeiro banner de hotdog, 
+para ficar abaixo da navbar
+*/
+.margin-top{
+    margin-top: 4.7rem;
+}
+
+/* 
+Esssa parte estiliza os quadradinhos do site, mudando suas cores e o título logo acima.
+h2: HOT DOG PARA TODAS AS OCASIÕES
+*/
+
+h2{
+    color: #BF3434
+}
+
+.quadrado-1{
+    background-color: #BF3434;
+    height: 15.7rem;
+    padding-top: 7rem;
+    
+}
+
+.quadrado-1 p{
+    display: inline;
+    padding: 25px;
+    color: #F2F1E4;
+    
+    
+}
+
+.quadrado-imagem{
+    overflow: hidden;
+    height: 15.7rem;
+    
+    
+}
+
+.quadrado-3{
+    background-color: #D94E67;
+    overflow: hidden;
+    height: 15.7rem;
+    padding-top: 7rem;
+}
+
+.quadrado-3 p{
+    display: inline;
+    padding: 25px;
+    color: #F2F1E4;
+    
+    
+}
+
+/* 
+Esssa parte estiliza os retangulos com imagens no site, para não ter padding e 
+mudar a cor do background.
+*/
+
+.col-lg-6{
+    padding: 0px !important;
+}
+
+
+.retangulos{
+    background-color: #F2F1E4;
+}
+
+/* 
+Essa parte estiliza o footer: 
+link normal: branco
+facebook: azul
+instagram: rosa
+ */
+
+
+.link-facebook:hover{
+    color: rgb(36, 84, 139) !important;
+}
+
+.link-instagram:hover{
+    color: rgb(201, 20, 125) !important;
+}
+
+.link-cellphone:hover{
+    color: rgb(132, 201, 20) !important;
+}
+
+
+.telefone{
+    color: #F2E205 !important;
+}
+
+.cor-ligue{
+    background-color: #0D0D0D;
+    color: #F2F1E4;
+}
+
+.cor-footer{
+    background-color: #0D0D0D;
+    color: #F2F1E4 !important;
+}
+
+footer .btn{
+    color:  #F2F1E4 !important;
+}
+
+/* 
+Essa parte estiliza o menu do site
+h1: muda a cor de "Menu"
+.tamanho define o tamanho maximo de uma imagem no menu
+.linha modifica o hr, que é útilizado como uma linha "divisoria"
+ */
+
+
+h1{
+    color: #BF3434 !important;
+}
+
+.linha{
+    border-left: 1px solid #F2F1E4;;
+    height: 6rem;
+}
+
+.tamanho{
+    max-height: 10rem;
+    
+}
+
+/* 
+Esssa parte estiliza o site para a versão mobile
+*/
+
+
+@media (max-width: 900px) {
+    .row header img {
+      width: 80rem;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    .linha{
+        display: none;
+    }
+    .col-sm-1{
+        display: none;
+    }
+
+    .col-lg-4 h4{
+        margin-top: 2.5rem;
+    }
+
+    h2{
+        font-size: 2rem !important;
+    }
+
+    .col-lg-3 img{
+        margin: 1rem;
+    }
+
+    .col-lg-3 .m-auto .text-justify {
+        text-align: center !important ;
+    }
+  }
+  
+
